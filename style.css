@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1e223d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+}
+.heading p {
+    color: #a9aec4;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+
+.balance,.income,.expense {
+    background: #facc15;
+    width: 150px;
+    /* height: 45px; */
+    padding: 15px;
+    box-sizing: 12px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.income {
+    background: #34d399;
+}
+.expense {
+    background: #fb7185;
+}
+.summary p {
+    font-size: 28px;
+    margin: 0 0 8px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.summary h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.add-transaction {
+    height: 130px;
+    width: 900px;
+    background: #343a63;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* padding-left: 20px; */
+}
+
+.add-transaction h4 {
+    color: white;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.description {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.description input , .type {
+    padding: 13px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background: #1e223d;
+    color: #a9aec4;
+}
+#add-btn {
+    padding: 13px 25px;
+    border-radius: 8px;
+    border: none;
+    background: #6d5dff;
+    font-weight: 400;
+    font-size: 17px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+#add-btn:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+.container {
+    height: 700px;
+    width: 900px;
+    background: #343a63;
+    border-radius: 10px;
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    gap: 40px;
+}
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    margin: 0 50px;
+    color: #a9aec4;
+    font-size: 20px;
+    align-items: center;
+}
+
+h5 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.transaction-filter {
+    display: flex;
+}
+
+.transaction-filter button , .transaction-filter p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    right: 10px;
+    height: 30px;
+    width: 100px;
+    background: white;
+}
+
+.main span:nth-child(2) , .main span:nth-child(3) , .main span:nth-child(4) {
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.main span:last-child {
+    text-align: right;
+}
