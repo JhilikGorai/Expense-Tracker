@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
 </head>
 <body>
      <!-- Top Headings -->
@@ -15,17 +16,17 @@
 
         <!-- 3-boxes -->
     <div class="summary">
-        <div class="balance">
+        <div class="balance" id="balance">
             <p>Balance</p>
-            <h3>₹0</h3>
+            <h3 id="balance-amount">₹0</h3>
         </div>
-        <div class="income">
+        <div class="income" id="income">
             <p>Income</p>
-            <h3>₹0</h3>
+            <h3 id="income-amount">₹0</h3>
         </div>
-        <div class="expense">
+        <div class="expense" id="expense">
             <p>Expense</p>
-            <h3>₹0</h3>
+            <h3 id="expense-amount">₹0</h3>
         </div>
     </div>
 
@@ -50,10 +51,15 @@
 
         <div class="transaction-filter">
             <h5>Transaction History</h5>
-            <button id="all">All</button>
-            <p>Income</p>
-            <p>Expense</p>
+
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <p>Income</p>
+                <p>Expense</p>
+            </div>
         </div>
+
+        <!-- Transaction headings -->
     <div class="main">
             <span>Description</span>
             <span>Type</span>
@@ -61,6 +67,9 @@
             <span>Date</span>
         
     </div>
+
+    <!-- JavaScript will add transactions here -->
+    <div class="transaction-list" id="transaction-list"></div>
 
     </div>
 
