@@ -229,6 +229,9 @@ h5 {
         margin: 20px auto;
         box-sizing: border-box;
     }
+    .heading p{
+        margin-left: 25px;
+    }
     .main {
         display: none;
     }
