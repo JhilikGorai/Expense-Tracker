@@ -6,7 +6,7 @@ This project helps users keep track of their income and expenses in one place. Y
 
 ## 🚀 Live Demo
 
-🔗 [View Live Demo](YOUR_LIVE_DEMO_LINK_HERE)
+🔗 [View Live Demo](https://jhilikgorai.github.io/Expense-Tracker/)
 
 ## ✨ Features
 
